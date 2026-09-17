@@ -1,7 +1,7 @@
 </main>
 
 <footer>
-    <p>&copy; <?= date('Y') ?> Simple POS System</p>
+    &copy; <?= date('Y') ?> Nexus POS · Built with CodeIgniter 4
 </footer>
 
 </body>

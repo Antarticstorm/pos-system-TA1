@@ -1,22 +1,27 @@
 <?= view('templates/header', ['title' => $title]) ?>
 
-<h1>Welcome to Simple POS</h1>
+<h1>Welcome to Nexus POS</h1>
 
 <p>
-    Simple POS is a basic Point-of-Sale management website built with
-    CodeIgniter 4.
+    Manage customer information and staff accounts through one simple
+    Point-of-Sale management interface.
 </p>
 
-<h2>Available Pages</h2>
+<div class="menu-grid">
+    <a class="menu-card" href="<?= site_url('customers') ?>">
+        <h3>Customer Accounts</h3>
+        <p>View customer names, email addresses, and contact numbers.</p>
+    </a>
 
-<ul>
-    <li>View information about the POS system.</li>
-    <li>View customer account records.</li>
-    <li>View user and staff account records.</li>
-</ul>
+    <a class="menu-card" href="<?= site_url('users') ?>">
+        <h3>User Accounts</h3>
+        <p>View the staff members registered in the POS system.</p>
+    </a>
 
-<p>
-    Use the navigation menu above to explore the website.
-</p>
+    <a class="menu-card" href="<?= site_url('about') ?>">
+        <h3>About the System</h3>
+        <p>Learn about the application and its MVC structure.</p>
+    </a>
+</div>
 
 <?= view('templates/footer') ?>

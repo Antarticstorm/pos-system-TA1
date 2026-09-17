@@ -24,6 +24,8 @@
     </tbody>
 </table>
 
-<p>Total customers: <?= count($customers) ?></p>
+<p class="record-count">
+    Total customers: <?= count($customers) ?>
+</p>
 
 <?= view('templates/footer') ?>
